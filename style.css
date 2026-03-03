@@ -1,0 +1,53 @@
+body{
+	margin: 0px;
+}
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	color: rgb(100 0 100 / 70%);
+	
+}
+.parent{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(
+		to top,
+		rgb(210 210 220),
+		rgb(100 150 255),
+		rgb(100 100 100));
+	display: grid;
+	grid-template-columns: repeat(10, 10vw); 
+	grid-template-rows: 20vh auto 20vh;
+	grid-template-areas:  "logo logo links links links links links links links links "
+"content content content content content content content nav nav nav" 
+"footer footer footer footer footer footer footer footer footer footer ";
+	
+}
+h2{
+	grid-area: logo;
+	box-shadow: 0px 0px 5px 0px inset;
+}
+list{
+	grid-area: links;
+	box-shadow: 0px 0px 5px 0px inset;
+	
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+}
+nav{
+	grid-area: nav;
+	box-shadow: 0px 0px 5px 0px inset;
+	
+}
+section{
+	box-shadow: 0px 0px 5px 0px inset;
+	grid-area: content;
+}
+footer{
+	grid-area: footer;
+	box-shadow: 0px 0px 5px 0px inset;
+	
+}
